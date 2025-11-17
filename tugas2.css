@@ -1,0 +1,105 @@
+/* Pengaturan dasar untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Warna latar belakang halaman */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Wadah utama formulir */
+.form-container {
+    background-color: #ffffff;
+    padding: 25px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    width: 100%;
+    max-width: 500px; /* Batasi lebar formulir */
+    box-sizing: border-box;
+}
+
+/* Judul dan Subjudul */
+.form-title {
+    color: #4CAF50; /* Warna hijau */
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form-subtitle {
+    color: #FF0000; /* Warna merah */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Grup input (Label dan Input) */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style untuk semua input teks, email, password, textarea, dan select */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Pastikan padding dan border masuk dalam lebar */
+}
+
+.form-group textarea {
+    resize: vertical; /* Hanya izinkan perubahan ukuran secara vertikal */
+}
+
+/* Gaya khusus untuk grup checkbox dan radio */
+.checkbox-group p,
+.radio-group p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.checkbox-group div,
+.radio-group div {
+    margin-bottom: 5px;
+}
+
+.checkbox-group label,
+.radio-group label {
+    font-weight: normal; /* Hilangkan bold untuk label checkbox/radio */
+    display: inline;
+}
+
+/* Style untuk tombol Submit */
+.submit-button {
+    width: 100%;
+    background-color: #4CAF50; /* Warna tombol hijau */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #45a049; /* Perubahan warna saat di-hover */
+}
+
+/* Style untuk input file (untuk menjaga tampilan tetap rapi) */
+.form-group input[type="file"] {
+    border: none;
+    padding: 0;
+}
